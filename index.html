@@ -7,31 +7,34 @@
 </head>
 <body>
   <h1>Character entities</h1>
-  <table id="entities">
-    <thead>
-      <tr>
-        <th>HTML</th>
-        <th>Symbol</th>
-        <th>Numeric</th>
-        <th>Description</th>
-        <th>Hex</th>
-        <th>CSS (ISO)</th>
-        <th>JS (Octal)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr v-for="entitie in entities">
-        <td>{{entitie.html}}</td>
-        <td>{{entitie.symbol}}</td>
-        <td v-bind:class="{ 'like':  entitie.like}">{{entitie.numeric}}</td>
-        <td>{{entitie.description}}</td>
-        <td>{{entitie.hex}}</td>
-        <td>{{entitie.cssIso}}</td>
-        <td>{{entitie.jsOctal}}</td>
-        <td><button @click="like(entitie)">Like</button></td>
-      </tr>
-    </tbody>
-  </table>
+  <main id="entities">
+    <table>
+      <thead>
+        <tr>
+          <th>HTML</th>
+          <th>Symbol</th>
+          <th>Numeric</th>
+          <th>Description</th>
+          <th>Hex</th>
+          <th>CSS (ISO)</th>
+          <th>JS (Octal)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="entitie in entities">
+          <td>{{entitie.html}}</td>
+          <td>{{entitie.symbol}}</td>
+          <td v-bind:class="{ 'like':  entitie.like}">{{entitie.numeric}}</td>
+          <td>{{entitie.description}}</td>
+          <td>{{entitie.hex}}</td>
+          <td>{{entitie.cssIso}}</td>
+          <td>{{entitie.jsOctal}}</td>
+          <td><button @click="like(entitie)">Like</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>{{count}} entities</p>
+  </main>
   <script src="js/vue.js"></script>
   <script src="js/script.js"></script>
 </body>
