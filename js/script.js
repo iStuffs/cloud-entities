@@ -348,6 +348,11 @@ let app = new Vue({
   data: {
     entities: entities
   },
+  computed: {
+    count() {
+      return this.entities.length;
+    }
+  },
   methods: {
     like(entitie) {
       entitie.like = !entitie.like;

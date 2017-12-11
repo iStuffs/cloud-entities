@@ -108,6 +108,306 @@ let latin = [
     cssIso: '\\00a9',
     jsOctal: '\\251',
     category: 'latin'
+  },
+  {
+    html: '&ordf;',
+    symbol: 'ª',
+    numeric: '&#170;',
+    description: 'ordinal indicator, feminine',
+    hex: '%AA',
+    cssIso: '\\00aa',
+    jsOctal: '\\252',
+    category: 'latin'
+  },
+  {
+    html: '&laquo;',
+    symbol: '«',
+    numeric: '&#171;',
+    description: 'angle quotation mark, left',
+    hex: '%AB',
+    cssIso: '\\00ab',
+    jsOctal: '\\253',
+    category: 'latin'
+  },
+  {
+    html: '&not;',
+    symbol: '¬',
+    numeric: '&#172;',
+    description: 'not sign',
+    hex: '%AC',
+    cssIso: '\\00ac',
+    jsOctal: '\\254',
+    category: 'latin'
+  },
+  {
+    html: '&shy;',
+    symbol: '',
+    numeric: '&#173;',
+    description: 'soft hyphen',
+    hex: '%AD',
+    cssIso: '\\00ad',
+    jsOctal: '\\255',
+    category: 'latin'
+  },
+  {
+    html: '&reg;',
+    symbol: '®',
+    numeric: '&#174;',
+    description: 'registered sign',
+    hex: '%AE',
+    cssIso: '\\00ae',
+    jsOctal: '\\256',
+    category: 'latin'
+  },
+  {
+    html: '&macr;',
+    symbol: '¯',
+    numeric: '&#175;',
+    description: 'macron',
+    hex: '%AF',
+    cssIso: '\\00af',
+    jsOctal: '\\257',
+    category: 'latin'
+  },
+  {
+    html: '&deg;',
+    symbol: '°',
+    numeric: '&#176;',
+    description: 'degree sign',
+    hex: '%B0',
+    cssIso: '\\00b0',
+    jsOctal: '\\260',
+    category: 'latin'
+  },
+  {
+    html: '&plusmn;',
+    symbol: '±',
+    numeric: '&#177;',
+    description: 'plus-or-minus sign',
+    hex: '%B1',
+    cssIso: '\\00b1',
+    jsOctal: '\\261',
+    category: 'latin'
+  },
+  {
+    html: '&sup2;',
+    symbol: '²',
+    numeric: '&#178;',
+    description: 'superscript two',
+    hex: '%B2',
+    cssIso: '\\00b2',
+    jsOctal: '\\262',
+    category: 'latin'
+  },
+  {
+    html: '&sup3;',
+    symbol: '³',
+    numeric: '&#179;',
+    description: 'superscript three',
+    hex: '%B3',
+    cssIso: '\\00b3',
+    jsOctal: '\\263',
+    category: 'latin'
+  },
+  {
+    html: '&acute;',
+    symbol: '´',
+    numeric: '&#180;',
+    description: 'acute accent',
+    hex: '%B4',
+    cssIso: '\\00b4',
+    jsOctal: '\\264',
+    category: 'latin'
+  },
+  {
+    html: '&micro;',
+    symbol: 'µ',
+    numeric: '&#181;',
+    description: 'micro sign',
+    hex: '%B5',
+    cssIso: '\\00b5',
+    jsOctal: '\\265',
+    category: 'latin'
+  },
+  {
+    html: '&para;',
+    symbol: '¶',
+    numeric: '&#182;',
+    description: 'pilcrow (paragraph sign)',
+    hex: '%B6',
+    cssIso: '\\00b6',
+    jsOctal: '\\266',
+    category: 'latin'
+  },
+  {
+    html: '&middot;',
+    symbol: '·',
+    numeric: '&#183;',
+    description: 'middle dot',
+    hex: '%B7',
+    cssIso: '\\00b7',
+    jsOctal: '\\267',
+    category: 'latin'
+  },
+  {
+    html: '&cedil;',
+    symbol: '¸',
+    numeric: '&#184;',
+    description: 'cedilla',
+    hex: '%B8',
+    cssIso: '\\00b8',
+    jsOctal: '\\270',
+    category: 'latin'
+  },
+  {
+    html: '&sup1;',
+    symbol: '¹',
+    numeric: '&#185;',
+    description: 'superscript one',
+    hex: '%B9',
+    cssIso: '\\00b9',
+    jsOctal: '\\271',
+    category: 'latin'
+  },
+  {
+    html: '&ordm;',
+    symbol: 'º',
+    numeric: '&#186;',
+    description: 'ordinal indicator, masculine',
+    hex: '%BA',
+    cssIso: '\\00ba',
+    jsOctal: '\\272',
+    category: 'latin'
+  },
+  {
+    html: '&raquo;',
+    symbol: '»',
+    numeric: '&#187;',
+    description: 'angle quotation mark, right',
+    hex: '%BB',
+    cssIso: '\\00bb',
+    jsOctal: '\\273',
+    category: 'latin'
+  },
+  {
+    html: '&frac14;',
+    symbol: '¼',
+    numeric: '&#188;',
+    description: 'fraction one-quarter',
+    hex: '%BC',
+    cssIso: '\\00bc',
+    jsOctal: '\\274',
+    category: 'latin'
+  },
+  {
+    html: '&frac12;',
+    symbol: '½',
+    numeric: '&#189;',
+    description: 'fraction one-half',
+    hex: '%BD',
+    cssIso: '\\00bd',
+    jsOctal: '\\275',
+    category: 'latin'
+  },
+  {
+    html: '&frac34;',
+    symbol: '¾',
+    numeric: '&#190;',
+    description: 'fraction three-quarters',
+    hex: '%BE',
+    cssIso: '\\00be',
+    jsOctal: '\\276',
+    category: 'latin'
+  },
+  {
+    html: '&iquest;',
+    symbol: '¿',
+    numeric: '&#191;',
+    description: 'inverted question mark',
+    hex: '%BF',
+    cssIso: '\\00bf',
+    jsOctal: '\\277',
+    category: 'latin'
+  },
+  {
+    html: '&Agrave;',
+    symbol: 'À',
+    numeric: '&#192;',
+    description: 'capital A, grave accent',
+    hex: '%C0',
+    cssIso: '\\00c0',
+    jsOctal: '\\300',
+    category: 'latin'
+  },
+  {
+    html: '&Aacute;',
+    symbol: 'Á',
+    numeric: '&#193;',
+    description: 'capital A, acute accent',
+    hex: '%C1',
+    cssIso: '\\00c1',
+    jsOctal: '\\301',
+    category: 'latin'
+  },
+  {
+    html: '&Acirc;',
+    symbol: 'Â',
+    numeric: '&#194;',
+    description: 'capital A, circumflex accent',
+    hex: '%C2',
+    cssIso: '\\00c2',
+    jsOctal: '\\302',
+    category: 'latin'
+  },
+  {
+    html: '&Atilde;',
+    symbol: 'Ã',
+    numeric: '&#195;',
+    description: 'capital A, tilde',
+    hex: '%C3',
+    cssIso: '\\00c3',
+    jsOctal: '\\303',
+    category: 'latin'
+  },
+  {
+    html: '&Auml;',
+    symbol: 'Ä',
+    numeric: '&#196;',
+    description: 'capital A, dieresis or umlaut mark',
+    hex: '%C4',
+    cssIso: '\\00c4',
+    jsOctal: '\\304',
+    category: 'latin'
+  },
+  {
+    html: '&Aring;',
+    symbol: 'Å',
+    numeric: '&#197;',
+    description: 'capital A, ring',
+    hex: '%C5',
+    cssIso: '\\00c5',
+    jsOctal: '\\305',
+    category: 'latin'
+  },
+  {
+    html: '&AElig;',
+    symbol: 'Æ',
+    numeric: '&#198;',
+    description: 'capital AE diphthong (ligature)',
+    hex: '%C6',
+    cssIso: '\\00c6',
+    jsOctal: '\\306',
+    category: 'latin'
+  },
+  {
+    html: '&Ccedil;',
+    symbol: 'Ç',
+    numeric: '&#199;',
+    description: 'capital C, cedilla',
+    hex: '%C7',
+    cssIso: '\\00c7',
+    jsOctal: '\\307',
+    category: 'latin'
   }
 ];
 
@@ -123,245 +423,16 @@ let latin = [
 }
 
 
-&ordf;
-ª
-&#170;
-ordinal indicator, feminine
-%AA
-\\00aa
-\\252
 
-&laquo;
-«
-&#171;
-angle quotation mark, left
-%AB
-\\00ab
-\\253
 
-&not;
-¬
-&#172;
-not sign
-%AC
-\\00ac
-\\254
 
-&shy;
 
-&#173;
-soft hyphen
-%AD
-\\00ad
-\\255
 
-&reg;
-®
-&#174;
-registered sign
-%AE
-\\00ae
-\\256
 
-&macr;
-¯
-&#175;
-macron
-%AF
-\\00af
-\\257
 
-&deg;
-°
-&#176;
-degree sign
-%B0
-\\00b0
-\\260
 
-&plusmn;
-±
-&#177;
-plus-or-minus sign
-%B1
-\\00b1
-\\261
 
-&sup2;
-²
-&#178;
-superscript two
-%B2
-\\00b2
-\\262
 
-&sup3;
-³
-&#179;
-superscript three
-%B3
-\\00b3
-\\263
-
-&acute;
-´
-&#180;
-acute accent
-%B4
-\\00b4
-\\264
-
-&micro;
-µ
-&#181;
-micro sign
-%B5
-\\00b5
-\\265
-
-&para;
-¶
-&#182;
-pilcrow (paragraph sign)
-%B6
-\\00b6
-\\266
-
-&middot;
-·
-&#183;
-middle dot
-%B7
-\\00b7
-\\267
-
-&cedil;
-¸
-&#184;
-cedilla
-%B8
-\\00b8
-\\270
-
-&sup1;
-¹
-&#185;
-superscript one
-%B9
-\\00b9
-\\271
-
-&ordm;
-º
-&#186;
-ordinal indicator, masculine
-%BA
-\\00ba
-\\272
-
-&raquo;
-»
-&#187;
-angle quotation mark, right
-%BB
-\\00bb
-\\273
-
-&frac14;
-¼
-&#188;
-fraction one-quarter
-%BC
-\\00bc
-\\274
-
-&frac12;
-½
-&#189;
-fraction one-half
-%BD
-\\00bd
-\\275
-
-&frac34;
-¾
-&#190;
-fraction three-quarters
-%BE
-\\00be
-\\276
-
-&iquest;
-¿
-&#191;
-inverted question mark
-%BF
-\\00bf
-\\277
-
-&Agrave;
-À
-&#192;
-capital A, grave accent
-%C0
-\\00c0
-\\300
-
-&Aacute;
-Á
-&#193;
-capital A, acute accent
-%C1
-\\00c1
-\\301
-
-&Acirc;
-Â
-&#194 ;
-capital A, circumflex accent
-%C2
-\\00c2
-\\302
-
-&Atilde;
-Ã
-&#195;
-capital A, tilde
-%C3
-\\00c3
-\\303
-
-&Auml;
-Ä
-&#196;
-capital A, dieresis or umlaut mark
-%C4
-\\00c4
-\\304
-
-&Aring;
-Å
-&#197;
-capital A, ring
-%C5
-\\00c5
-\\305
-
-&AElig;
-Æ
-&#198;
-capital AE diphthong (ligature)
-%C6
-\\00c6
-\\306
-
-&Ccedil;
-Ç
-&#199;
-capital C, cedilla
-%C7
-\\00c7
-\\307
 
 &Egrave;
 È
