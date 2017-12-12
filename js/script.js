@@ -346,16 +346,32 @@ let entities = [
 let app = new Vue({
   el: '#entities',
   data: {
-    entities: entities
+    entities: entities,
+    countLikes: 0
   },
   computed: {
     count() {
       return this.entities.length;
+    },
+    hasLikes() {
+      let hasLikes = false;
+      if (this.countLikes > 0) {
+          hasLikes = true;
+      }
+      return hasLikes;
     }
   },
   methods: {
     like(entitie) {
-      entitie.like = !entitie.like;
+      if ( entitie.like === false ) {
+        entitie.like = true;
+        this.countLikes++;
+      } else {
+        entitie.like = false;
+        this.countLikes--;
+      }
+      // entitie.like = !entitie.like;
+      // entitie.like ? (entities.countLikes++) : (entities.countLikes--);
     }
   }
 });
