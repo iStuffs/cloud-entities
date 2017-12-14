@@ -8,23 +8,54 @@
 <body>
   <h1>Character entities</h1>
   <main id="entities">
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="7">Farovites entities</th>
+          </tr>
+          <tr>
+            <th scope="col">HTML</th>
+            <th scope="col">Symbol</th>
+            <th scope="col">Numeric</th>
+            <th scope="col">Description</th>
+            <th scope="col">Hex</th>
+            <th scope="col">CSS (ISO)</th>
+            <th scope="col">JS (Octal)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="entitie in entities" v-if="entitie.like">
+            <td>{{entitie.html}}</td>
+            <td>{{entitie.symbol}}</td>
+            <td>{{entitie.numeric}}</td>
+            <td>{{entitie.description}}</td>
+            <td>{{entitie.hex}}</td>
+            <td>{{entitie.cssIso}}</td>
+            <td>{{entitie.jsOctal}}</td>
+            <td><button @click="like(entitie)">Like</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
     <table>
       <thead>
         <tr>
-          <th>HTML</th>
-          <th>Symbol</th>
-          <th>Numeric</th>
-          <th>Description</th>
-          <th>Hex</th>
-          <th>CSS (ISO)</th>
-          <th>JS (Octal)</th>
+          <th scope="col">HTML</th>
+          <th scope="col">Symbol</th>
+          <th scope="col">Numeric</th>
+          <th scope="col">Description</th>
+          <th scope="col">Hex</th>
+          <th scope="col">CSS (ISO)</th>
+          <th scope="col">JS (Octal)</th>
         </tr>
       </thead>
       <tbody>
-        <tr v-for="entitie in entities">
+        <tr v-for="entitie in entities" v-bind:class="{ 'like':  entitie.like}">
           <td>{{entitie.html}}</td>
           <td>{{entitie.symbol}}</td>
-          <td v-bind:class="{ 'like':  entitie.like}">{{entitie.numeric}}</td>
+          <td>{{entitie.numeric}}</td>
           <td>{{entitie.description}}</td>
           <td>{{entitie.hex}}</td>
           <td>{{entitie.cssIso}}</td>

@@ -1,3 +1,28 @@
-.like
-  color: red
-  
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700')
+
+$color-accent: #00BCD4
+$color-liked: #EC407A
+$color-text: #263238
+
+body
+  font-family:
+  color: $color-text
+h1
+  text-align: center
+
+table
+  margin: 0 auto
+tr
+  transition: all .2s linear
+tr:nth-of-type(even)
+  background: rgba($color-accent,.1)
+
+tr:hover
+  background: rgba($color-accent,.5)
+  color: darken($color-accent, 30%)
+
+tr.like
+  background: rgba($color-liked, .3)
+
+td
+  padding: .5rem

@@ -1,3 +1,5 @@
+//https://www.creativejuiz.fr/blog/tutoriels/copier-presse-papier-en-javascript
+
 let entities = [
   {
     html: '&quot;',
