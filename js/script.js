@@ -354,16 +354,7 @@ let app = new Vue({
       return this.entities.length;
     },
     hasLikes() {
-      let hasLikes = false;
-      if (this.countLikes > 0) {
-          hasLikes = true;
-      }
-      return hasLikes;
-    }
-  },
-  computed: {
-    count() {
-      return this.entities.length;
+      return (this.countLikes > 0);
     }
   },
   methods: {
@@ -377,6 +368,13 @@ let app = new Vue({
       }
       // entitie.like = !entitie.like;
       // entitie.like ? (entities.countLikes++) : (entities.countLikes--);
+    },
+    likeCaption(entitie) {
+      let caption = 'Like';
+      if(entitie.like) {
+        caption = 'unLike';
+      }
+      return caption;
     },
     copy(e) {
       let text = e.target;

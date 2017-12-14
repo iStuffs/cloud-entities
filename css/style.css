@@ -1,27 +1,80 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+@font-face {
+  font-family: 'entities';
+  src: url("../fonts/entities.ttf?szl2oe") format("truetype"), url("../fonts/entities.woff?szl2oe") format("woff"), url("../fonts/entities.svg?szl2oe#entities") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'entities' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-command:before {
+  content: "\e900"; }
+
+.icon-cmd:before {
+  content: "\e900"; }
+
+.icon-heart-o:before {
+  content: "\e901"; }
+
+.icon-heart:before {
+  content: "\e902"; }
+
 body {
+  font-family: 'Roboto', sans-serif;
   color: #263238; }
 
 h1 {
   text-align: center; }
 
 table {
-  margin: 0 auto; }
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #263238;
+  border-radius: 0 0 5px 5px;
+  border-collapse: collapse;
+  margin-bottom: 2rem; }
 
-tr {
-  -webkit-transition: all .2s linear;
-  -o-transition: all .2s linear;
+thead th {
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.9); }
+
+thead tr:last-of-type th, thead tr:last-of-type td {
+  border-bottom: 2px solid #263238; }
+
+tbody tr {
   transition: all .2s linear; }
 
-tr:nth-of-type(even) {
+tbody tr:nth-of-type(even) {
   background: rgba(0, 188, 212, 0.1); }
 
-tr:hover {
+tbody tr:hover {
   background: rgba(0, 188, 212, 0.5);
   color: #00343b; }
 
-tr.like {
+tbody tr.like {
   background: rgba(236, 64, 122, 0.3); }
 
+tfoot {
+  background: #f1f1f1;
+  text-align: right; }
+  tfoot td {
+    padding-right: 30px; }
+
+th {
+  padding: 15px; }
+
 td {
-  padding: .5rem; }
+  padding: 12px; }

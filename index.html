@@ -8,11 +8,10 @@
 <body>
   <h1>Character entities</h1>
   <main id="entities">
-    <div>
-      <table>
+      <table v-if="hasLikes">
         <thead>
           <tr>
-            <th colspan="7">Farovites entities</th>
+            <th colspan="8">Favorites entities</th>
           </tr>
           <tr>
             <th scope="col">HTML</th>
@@ -22,6 +21,7 @@
             <th scope="col">Hex</th>
             <th scope="col">CSS (ISO)</th>
             <th scope="col">JS (Octal)</th>
+            <th>&nbsp;</th>
           </tr>
         </thead>
         <tbody>
@@ -33,11 +33,10 @@
             <td @click="copy($event)">{{entitie.hex}}</td>
             <td @click="copy($event)">{{entitie.cssIso}}</td>
             <td @click="copy($event)">{{entitie.jsOctal}}</td>
-            <td><button @click="like(entitie)">Like</button></td>
+            <td><button @click="like(entitie)"><span :class="entitie.like ? 'icon-heart' : 'icon-heart-o' "></span> {{likeCaption(entitie)}}</button></td>
           </tr>
         </tbody>
       </table>
-    </div>
 
     <table>
       <thead>
@@ -49,6 +48,7 @@
           <th scope="col">Hex</th>
           <th scope="col">CSS (ISO)</th>
           <th scope="col">JS (Octal)</th>
+          <th>&nbsp;</th>
         </tr>
       </thead>
       <tbody>
@@ -60,13 +60,17 @@
           <td @click="copy($event)">{{entitie.hex}}</td>
           <td @click="copy($event)">{{entitie.cssIso}}</td>
           <td @click="copy($event)">{{entitie.jsOctal}}</td>
-          <td><button @click="like(entitie)">Like</button></td>
+          <td><button @click="like(entitie)"><span :class="entitie.like ? 'icon-heart' : 'icon-heart-o' "></span> {{likeCaption(entitie)}}</button></td>
         </tr>
       </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="8"><strong>{{count}} entities</strong></td>
+        </tr>
+      </tfoot>
     </table>
-    <p>{{count}} entities</p>
   </main>
-  <script src="js/vue.js"></script>
-  <script src="js/script.js"></script>
+  <script type="text/javascript" src="js/vue.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
