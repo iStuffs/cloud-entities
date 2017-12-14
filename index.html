@@ -26,13 +26,13 @@
         </thead>
         <tbody>
           <tr v-for="entitie in entities" v-if="entitie.like">
-            <td>{{entitie.html}}</td>
-            <td>{{entitie.symbol}}</td>
-            <td>{{entitie.numeric}}</td>
-            <td>{{entitie.description}}</td>
-            <td>{{entitie.hex}}</td>
-            <td>{{entitie.cssIso}}</td>
-            <td>{{entitie.jsOctal}}</td>
+            <td @click="copy($event)">{{entitie.html}}</td>
+            <td @click="copy($event)">{{entitie.symbol}}</td>
+            <td @click="copy($event)">{{entitie.numeric}}</td>
+            <td @click="copy($event)">{{entitie.description}}</td>
+            <td @click="copy($event)">{{entitie.hex}}</td>
+            <td @click="copy($event)">{{entitie.cssIso}}</td>
+            <td @click="copy($event)">{{entitie.jsOctal}}</td>
             <td><button @click="like(entitie)">Like</button></td>
           </tr>
         </tbody>
@@ -53,13 +53,13 @@
       </thead>
       <tbody>
         <tr v-for="entitie in entities" v-bind:class="{ 'like':  entitie.like}">
-          <td>{{entitie.html}}</td>
-          <td>{{entitie.symbol}}</td>
-          <td>{{entitie.numeric}}</td>
-          <td>{{entitie.description}}</td>
-          <td>{{entitie.hex}}</td>
-          <td>{{entitie.cssIso}}</td>
-          <td>{{entitie.jsOctal}}</td>
+          <td @click="copy($event)">{{entitie.html}}</td>
+          <td @click="copy($event)">{{entitie.symbol}}</td>
+          <td @click="copy($event)">{{entitie.numeric}}</td>
+          <td @click="copy($event)">{{entitie.description}}</td>
+          <td @click="copy($event)">{{entitie.hex}}</td>
+          <td @click="copy($event)">{{entitie.cssIso}}</td>
+          <td @click="copy($event)">{{entitie.jsOctal}}</td>
           <td><button @click="like(entitie)">Like</button></td>
         </tr>
       </tbody>

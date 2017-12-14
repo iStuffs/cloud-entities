@@ -377,6 +377,19 @@ let app = new Vue({
       }
       // entitie.like = !entitie.like;
       // entitie.like ? (entities.countLikes++) : (entities.countLikes--);
+    },
+    copy(e) {
+      let text = e.target;
+
+      let selection = window.getSelection();
+      let range     = document.createRange();
+
+      range.selectNodeContents(text);
+      selection.removeAllRanges();
+      selection.addRange(range);
+
+      document.execCommand( 'copy' );
+      selection.removeAllRanges();
     }
   }
 });
