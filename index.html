@@ -8,32 +8,35 @@
 <body>
   <h1>Character entities</h1>
   <main id="entities">
-    <div class="overlay-notification"><span class="icon-cmd"></span> Copied</div>
+    <div class="columns">
+      <button v-for="(value, column) in columns" @click="toggleCol(column)" :class="{ 'active':  value}">{{column}}</button>
+    </div>
+    <div class="overlay-notification" id="overlay-notification"><span class="icon-cmd"></span> Copied</div>
       <table v-if="hasLikes">
         <thead>
           <tr>
-            <th colspan="8">Favorites entities</th>
+            <th :colspan="countColumns + 1">Favorites entities</th>
           </tr>
           <tr>
-            <th scope="col">HTML</th>
-            <th scope="col">Symbol</th>
-            <th scope="col">Numeric</th>
-            <th scope="col">Description</th>
-            <th scope="col">Hex</th>
-            <th scope="col">CSS (ISO)</th>
-            <th scope="col">JS (Octal)</th>
+            <th scope="col" v-if="columns.html">HTML</th>
+            <th scope="col" v-if="columns.symbol">Symbol</th>
+            <th scope="col" v-if="columns.numeric">Numeric</th>
+            <th scope="col" v-if="columns.description">Description</th>
+            <th scope="col" v-if="columns.hex">Hex</th>
+            <th scope="col" v-if="columns.css">CSS (ISO)</th>
+            <th scope="col" v-if="columns.js">JS (Octal)</th>
             <th>&nbsp;</th>
           </tr>
         </thead>
         <tbody>
           <tr v-for="entitie in entities" v-if="entitie.like">
-            <td @click="copy($event)">{{entitie.html}}</td>
-            <td @click="copy($event)">{{entitie.symbol}}</td>
-            <td @click="copy($event)">{{entitie.numeric}}</td>
-            <td @click="copy($event)">{{entitie.description}}</td>
-            <td @click="copy($event)">{{entitie.hex}}</td>
-            <td @click="copy($event)">{{entitie.cssIso}}</td>
-            <td @click="copy($event)">{{entitie.jsOctal}}</td>
+            <td @click="copy($event)" v-if="columns.html">{{entitie.html}}</td>
+            <td @click="copy($event)" v-if="columns.symbol">{{entitie.symbol}}</td>
+            <td @click="copy($event)" v-if="columns.numeric">{{entitie.numeric}}</td>
+            <td @click="copy($event)" v-if="columns.description">{{entitie.description}}</td>
+            <td @click="copy($event)" v-if="columns.hex">{{entitie.hex}}</td>
+            <td @click="copy($event)" v-if="columns.css">{{entitie.cssIso}}</td>
+            <td @click="copy($event)" v-if="columns.js">{{entitie.jsOctal}}</td>
             <td><button @click="like(entitie)"><span :class="entitie.like ? 'icon-heart' : 'icon-heart-o' "></span> {{likeCaption(entitie)}}</button></td>
           </tr>
         </tbody>
@@ -42,31 +45,31 @@
     <table>
       <thead>
         <tr>
-          <th scope="col">HTML</th>
-          <th scope="col">Symbol</th>
-          <th scope="col">Numeric</th>
-          <th scope="col">Description</th>
-          <th scope="col">Hex</th>
-          <th scope="col">CSS (ISO)</th>
-          <th scope="col">JS (Octal)</th>
+          <th scope="col" v-if="columns.html">HTML</th>
+          <th scope="col" v-if="columns.symbol">Symbol</th>
+          <th scope="col" v-if="columns.numeric">Numeric</th>
+          <th scope="col" v-if="columns.description">Description</th>
+          <th scope="col" v-if="columns.hex">Hex</th>
+          <th scope="col" v-if="columns.css">CSS (ISO)</th>
+          <th scope="col" v-if="columns.js">JS (Octal)</th>
           <th>&nbsp;</th>
         </tr>
       </thead>
       <tbody>
         <tr v-for="entitie in entities" v-bind:class="{ 'like':  entitie.like}">
-          <td @click="copy($event)">{{entitie.html}}</td>
-          <td @click="copy($event)">{{entitie.symbol}}</td>
-          <td @click="copy($event)">{{entitie.numeric}}</td>
-          <td @click="copy($event)">{{entitie.description}}</td>
-          <td @click="copy($event)">{{entitie.hex}}</td>
-          <td @click="copy($event)">{{entitie.cssIso}}</td>
-          <td @click="copy($event)">{{entitie.jsOctal}}</td>
+          <td @click="copy($event)" v-if="columns.html">{{entitie.html}}</td>
+          <td @click="copy($event)" v-if="columns.symbol">{{entitie.symbol}}</td>
+          <td @click="copy($event)" v-if="columns.numeric">{{entitie.numeric}}</td>
+          <td @click="copy($event)" v-if="columns.description">{{entitie.description}}</td>
+          <td @click="copy($event)" v-if="columns.hex">{{entitie.hex}}</td>
+          <td @click="copy($event)" v-if="columns.css">{{entitie.cssIso}}</td>
+          <td @click="copy($event)" v-if="columns.js">{{entitie.jsOctal}}</td>
           <td><button @click="like(entitie)"><span :class="entitie.like ? 'icon-heart' : 'icon-heart-o' "></span> {{likeCaption(entitie)}}</button></td>
         </tr>
       </tbody>
       <tfoot>
         <tr>
-          <td colspan="8"><strong>{{count}} entities</strong></td>
+          <td v-bind:colspan="countColumns + 1"><strong>{{count}} entities</strong></td>
         </tr>
       </tfoot>
     </table>

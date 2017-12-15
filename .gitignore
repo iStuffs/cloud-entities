@@ -65,3 +65,6 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/macos,windows,codekit,prepros
+
+#jshint
+.jshintrc
