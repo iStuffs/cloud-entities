@@ -47,6 +47,7 @@ table {
   margin-bottom: 2rem; }
 
 thead th {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   background: rgba(255, 255, 255, 0.9); }
@@ -55,6 +56,8 @@ thead tr:last-of-type th, thead tr:last-of-type td {
   border-bottom: 2px solid #263238; }
 
 tbody tr {
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
   transition: all .2s linear; }
 
 tbody tr:nth-of-type(even) {
@@ -78,3 +81,25 @@ th {
 
 td {
   padding: 12px; }
+
+.overlay-notification {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  font-size: 3rem; }
