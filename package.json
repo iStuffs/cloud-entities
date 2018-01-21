@@ -1,0 +1,33 @@
+{
+  "name": "entities",
+  "version": "0.0.1",
+  "description": "[![entities](docs/entities.png)](https://istuffs.github.io/entities/)",
+  "main": "js/entities.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iStuffs/entities.git"
+  },
+  "keywords": [
+    "encode",
+    "html",
+    "entities",
+    "css",
+    "js",
+    "javascript",
+    "octal",
+    "hexadecimal",
+    "symbol"
+  ],
+  "author": "iStuffs: Samuel DIDIER-LAURENT <istuffs@gmail.com> (https://istuffs.be)",
+  "license": "CC-BY-NC-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/iStuffs/entities/issues"
+  },
+  "homepage": "https://github.com/iStuffs/entities#readme"
+}

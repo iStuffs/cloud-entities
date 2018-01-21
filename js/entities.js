@@ -1909,5 +1909,465 @@ let entities = [
     cssIso: '\\03D6',
     jsOctal: '\\u03D6',
     category: 'greek'
+  },
+  {
+    html: '&ensp;',
+    symbol: '',
+    numeric: '&#8194;',
+    description: 'en space',
+    hex: 'u+2002 ISOpub',
+    cssIso: '\\2002',
+    jsOctal: '\\u2002',
+    category: 'punctuation'
+  },
+  {
+    html: '&emsp;',
+    symbol: '',
+    numeric: '&#8195;',
+    description: 'em space',
+    hex: 'u+2003 ISOpub',
+    cssIso: '\\2003',
+    jsOctal: '\\u2003',
+    category: 'punctuation'
+  },
+  {
+    html: '&thinsp;',
+    symbol: '',
+    numeric: '&#8201;',
+    description: 'thin space',
+    hex: 'u+2009 ISOpub',
+    cssIso: '\\2009',
+    jsOctal: '\\u2009',
+    category: 'punctuation'
+  },
+  {
+    html: '&zwnj;',
+    symbol: '',
+    numeric: '&#8204;',
+    description: 'zero width non-joiner',
+    hex: 'u+200C NEW RFC 2070',
+    cssIso: '\\200C',
+    jsOctal: '\\u200C',
+    category: 'punctuation'
+  },
+  {
+    html: '&zwj;',
+    symbol: '',
+    numeric: '&#8205;',
+    description: 'zero width joiner',
+    hex: 'u+200D NEW RFC 2070',
+    cssIso: '\\200D',
+    jsOctal: '\\u200d',
+    category: 'punctuation'
+  },
+  {
+    html: '&lrm;',
+    symbol: '',
+    numeric: '&#8206;',
+    description: 'left-to-right mark',
+    hex: 'u+200E NEW RFC 2070',
+    cssIso: '\\200E',
+    jsOctal: '\\u200e',
+    category: 'punctuation'
+  },
+  {
+    html: '&rlm;',
+    symbol: '',
+    numeric: '&#8207;',
+    description: 'right-to-left mark',
+    hex: 'u+200F NEW RFC 2070',
+    cssIso: '\\200F',
+    jsOctal: '\\u200f',
+    category: 'punctuation'
+  },
+  {
+    html: '&ndash;',
+    symbol: '–',
+    numeric: '&#8211;',
+    description: 'en dash',
+    hex: 'u+2013 ISOpub',
+    cssIso: '\\2013',
+    jsOctal: '\\u2013',
+    category: 'punctuation'
+  },
+  {
+    html: '&mdash;',
+    symbol: '—',
+    numeric: '&#8212;',
+    description: 'em dash',
+    hex: 'u+2014 ISOpub',
+    cssIso: '\\2014',
+    jsOctal: '\\u2014',
+    category: 'punctuation'
+  },
+  {
+    html: '&lsquo;',
+    symbol: '‘',
+    numeric: '&#8216;',
+    description: 'left single quotation mark',
+    hex: 'u+2018 ISOnum',
+    cssIso: '\\2018',
+    jsOctal: '\\u2018',
+    category: 'punctuation'
+  },
+  {
+    html: '&rsquo;',
+    symbol: '’',
+    numeric: '&#8217;',
+    description: 'right single quotation mark',
+    hex: 'u+2019 ISOnum',
+    cssIso: '\\2019',
+    jsOctal: '\\u2019',
+    category: 'punctuation'
+  },
+  {
+    html: '&sbquo;',
+    symbol: '‚',
+    numeric: '&#8218;',
+    description: 'single low-9 quotation mark',
+    hex: 'u+201A NEW',
+    cssIso: '\\201A',
+    jsOctal: '\\u201a',
+    category: 'punctuation'
+  },
+  {
+    html: '&ldquo;',
+    symbol: '“',
+    numeric: '&#8220;',
+    description: 'left double quotation mark',
+    hex: 'u+201C ISOnum',
+    cssIso: '\\201C',
+    jsOctal: '\\u201c',
+    category: 'punctuation'
+  },
+  {
+    html: '&rdquo;',
+    symbol: '”',
+    numeric: '&#8221;',
+    description: 'right double quotation mark',
+    hex: 'u+201D ISOnum',
+    cssIso: '\\201D',
+    jsOctal: '\\u201d',
+    category: 'punctuation'
+  },
+  {
+    html: '&bdquo;',
+    symbol: '„',
+    numeric: '&#8222;',
+    description: 'double low-9 quotation mark',
+    hex: 'u+201E NEW',
+    cssIso: '\\201E',
+    jsOctal: '\\u201e',
+    category: 'punctuation'
+  },
+  {
+    html: '&dagger;',
+    symbol: '†',
+    numeric: '&#8224;',
+    description: 'dagger',
+    hex: 'u+2020 ISOpub',
+    cssIso: '\\2020',
+    jsOctal: '\\u2020',
+    category: 'punctuation'
+  },
+  {
+    html: '&Dagger;',
+    symbol: '‡',
+    numeric: '&#8225;',
+    description: 'double dagger',
+    hex: 'u+2021 ISOpub',
+    cssIso: '\\2021',
+    jsOctal: '\\u2021',
+    category: 'punctuation'
+  },
+  {
+    html: '&permil;',
+    symbol: '‰',
+    numeric: '&#8240;',
+    description: 'per mille sign',
+    hex: 'u+2030 ISOtech',
+    cssIso: '\\2030',
+    jsOctal: '\\u2030',
+    category: 'punctuation'
+  },
+  {
+    html: '&lsaquo;',
+    symbol: '‹',
+    numeric: '&#8249;',
+    description: 'single left-pointing angle quotation mark',
+    hex: 'u+2039 ISO proposed',
+    cssIso: '\\2039',
+    jsOctal: '\\u2039',
+    category: 'punctuation'
+  },
+  {
+    html: '&rsaquo;',
+    symbol: '›',
+    numeric: '&#8250;',
+    description: 'single right-pointing angle quotation mark',
+    hex: 'u+203A ISO proposed',
+    cssIso: '\\203A',
+    jsOctal: '\\u203a',
+    category: 'punctuation'
+  },
+  {
+    html: '&bull;',
+    symbol: '•',
+    numeric: '&#8226;',
+    description: 'bullet, a.k.a. black small circle bullet is NOT the same as bullet operator — u+2219',
+    hex: 'u+2022 ISOpub',
+    cssIso: '\\2022',
+    jsOctal: '\\u2219',
+    category: 'punctuation'
+  },
+  {
+    html: '&hellip;',
+    symbol: '…',
+    numeric: '&#8230;',
+    description: 'horizontal ellipsis, a.k.a. three dot leader',
+    hex: 'u+2026 ISOpub',
+    cssIso: '\\2026',
+    jsOctal: '\\u2026',
+    category: 'punctuation'
+  },
+  {
+    html: '&prime;',
+    symbol: '′',
+    numeric: '&#8242;',
+    description: 'prime, a.k.a. minutes, a.k.a. feet',
+    hex: 'u+2032 ISOtech',
+    cssIso: '\\2032',
+    jsOctal: '\\u2032',
+    category: 'punctuation'
+  },
+  {
+    html: '&Prime;',
+    symbol: '″',
+    numeric: '&#8243;',
+    description: 'double prime, a.k.a. seconds, a.k.a. inches',
+    hex: 'u+2033 ISOtech',
+    cssIso: '\\2033',
+    jsOctal: '\\u2033',
+    category: 'punctuation'
+  },
+  {
+    html: '&oline;',
+    symbol: '‾',
+    numeric: '&#8254;',
+    description: 'overline, a.k.a. spacing overscore',
+    hex: 'u+203E NEW',
+    cssIso: '\\203E',
+    jsOctal: '\\u203e',
+    category: 'punctuation'
+  },
+  {
+    html: '&frasl;',
+    symbol: '⁄',
+    numeric: '&#8260;',
+    description: 'fraction slash',
+    hex: 'u+2044 NEW',
+    cssIso: '\\2044',
+    jsOctal: '\\u8260',
+    category: 'punctuation'
+  },
+  {
+    html: '&weierp;',
+    symbol: '℘',
+    numeric: '&#8472;',
+    description: 'script capital P, a.k.a. power set, a.k.a. Weierstrass p',
+    hex: 'u+2118 ISOamso',
+    cssIso: '\\2118',
+    jsOctal: '\\u2118',
+    category: 'letter-like symbols'
+  },
+  {
+    html: '&image;',
+    symbol: 'ℑ',
+    numeric: '&#8465;',
+    description: 'blackletter capital I, a.k.a. imaginary part',
+    hex: 'u+2111 ISOamso',
+    cssIso: '\\2111',
+    jsOctal: '\\u2111',
+    category: 'letter-like symbols'
+  },
+  {
+    html: '&real;',
+    symbol: 'ℜ',
+    numeric: '&#8476;',
+    description: 'blackletter capital R, a.k.a. real part symbol',
+    hex: 'u+211C ISOamso',
+    cssIso: '\\211C',
+    jsOctal: '\\u211c',
+    category: 'letter-like symbols'
+  },
+  {
+    html: '&trade;',
+    symbol: '™',
+    numeric: '&#8482;',
+    description: 'trade mark sign',
+    hex: 'u+2122 ISOnum',
+    cssIso: '\\2122',
+    jsOctal: '\\u2122',
+    category: 'letter-like symbols'
+  },
+  {
+    html: '&alefsym;',
+    symbol: 'ℵ',
+    numeric: '&#8501;',
+    description: 'alef symbol',
+    hex: 'u+2135 NEW',
+    cssIso: '\\2135',
+    jsOctal: '\\u',
+    category: 'letter-like symbols'
+  },
+  {
+    html: '&larr;',
+    symbol: '←',
+    numeric: '&#8592;',
+    description: 'leftwards arrow',
+    hex: 'u+2190 ISOnum',
+    cssIso: '\\2190',
+    jsOctal: '\\u2190',
+    category: 'arrows'
+  },
+  {
+    html: '&uarr;',
+    symbol: '↑',
+    numeric: '&#8593;',
+    description: 'upwards arrow',
+    hex: 'u+2191 ISOnum',
+    cssIso: '\\2191',
+    jsOctal: '\\u2191',
+    category: 'arrows'
+  },
+  {
+    html: '&rarr;',
+    symbol: '→',
+    numeric: '&#8594;',
+    description: 'rightwards arrow',
+    hex: 'u+2192 ISOnum',
+    cssIso: '\\2192',
+    jsOctal: '\\u2192',
+    category: 'arrows'
+  },
+  {
+    html: '&darr;',
+    symbol: '↓',
+    numeric: '&#8595;',
+    description: 'downwards arrow',
+    hex: 'u+2193 ISOnum',
+    cssIso: '\\2193',
+    jsOctal: '\\u2193',
+    category: 'arrows'
+  },
+  {
+    html: '&harr;',
+    symbol: '↔',
+    numeric: '&#8596;',
+    description: 'left right arrow',
+    hex: 'u+2194 ISOamsa',
+    cssIso: '\\2194',
+    jsOctal: '\\u2194',
+    category: 'arrows'
+  },
+  {
+    html: '&crarr;',
+    symbol: '↵',
+    numeric: '&#8629;',
+    description: 'downwards arrow with corner leftwards, a.k.a. carriage return',
+    hex: 'u+21B5 NEW',
+    cssIso: '\\21B5',
+    jsOctal: '\\u21b5',
+    category: 'arrows'
+  },
+  {
+    html: '&lArr;',
+    symbol: '⇐',
+    numeric: '&#8656;',
+    description: 'leftwards double arrow can be used for ‘is implied by’',
+    hex: 'u+21D0 ISOtech',
+    cssIso: '\\21D0',
+    jsOctal: '\\u21d0',
+    category: 'arrows'
+  },
+  {
+    html: '&uArr;',
+    symbol: '⇑',
+    numeric: '&#8657;',
+    description: 'upwards double arrow',
+    hex: 'u+21D1 ISOamsa',
+    cssIso: '\\21D1',
+    jsOctal: '\\u21d1',
+    category: 'arrows'
+  },
+  {
+    html: '&rArr;',
+    symbol: '⇒',
+    numeric: '&#8658;',
+    description: 'rightwards double arrow',
+    hex: 'u+21D2 ISOtech',
+    cssIso: '\\21D2',
+    jsOctal: '\\u21d2',
+    category: 'arrows'
+  },
+  {
+    html: '&dArr;',
+    symbol: '⇓',
+    numeric: '&#8659;',
+    description: 'downwards double arrow',
+    hex: 'u+21D3 ISOamsa',
+    cssIso: '\\21D3',
+    jsOctal: '\\ud1d3',
+    category: 'arrows'
+  },
+  {
+    html: '&hArr;',
+    symbol: '⇔',
+    numeric: '&#8660;',
+    description: 'left right double arrow',
+    hex: 'u+21D4 ISOamsa',
+    cssIso: '\\21D4',
+    jsOctal: '\\u21d4',
+    category: 'arrows'
+  },
+  {
+    html: '',
+    symbol: '◄',
+    numeric: '&#9668;',
+    description: 'black left pointing triangle',
+    hex: 'U+25C0',
+    cssIso: '\\25C0',
+    jsOctal: '\\u25c0',
+    category: 'arrows'
+  },
+  {
+    html: '',
+    symbol: '►',
+    numeric: '&#9658;',
+    description: 'black right pointing triangle',
+    hex: 'u+25B6',
+    cssIso: '\\25b6',
+    jsOctal: '\\u25b6',
+    category: 'arrows'
+  },
+  {
+    html: '',
+    symbol: '▲',
+    numeric: '&#9650;',
+    description: 'black up pointing triangle',
+    hex: 'u+25B2',
+    cssIso: '\\25b2',
+    jsOctal: '\\25b2',
+    category: 'arrows'
+  },
+  {
+    html: '',
+    symbol: '▼',
+    numeric: '&#9660;',
+    description: 'black down pointing triangle',
+    hex: 'u+25BC',
+    cssIso: '\\25bc',
+    jsOctal: '\\25bc',
+    category: 'arrows'
   }
 ];

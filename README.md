@@ -4,7 +4,7 @@
 
 ## :speech_balloon: What...
 
-Entities is a collection of 188 special characters encoded in 6 different languages (plain symbol, html, css, numeric, hex and octal).
+Entities is a collection of 234 special characters encoded in 6 different languages (plain symbol, html, css, numeric, hex and octal).
 
 Easy to use, you can copy what you need just one click.
 You can also find in the code source a javascript list of literal object of all these characters.
