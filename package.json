@@ -1,6 +1,6 @@
 {
-  "name": "entities",
-  "version": "0.0.1",
+  "name": "cloud-entities",
+  "version": "0.0.2",
   "description": "[![entities](docs/entities.png)](https://istuffs.github.io/entities/)",
   "main": "js/entities.js",
   "directories": {

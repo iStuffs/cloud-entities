@@ -1,15 +1,15 @@
 [![entities](docs/entities.png)](https://istuffs.github.io/entities/)
 
-# Entities app
+# Cloud Entities app
 
 ## :speech_balloon: What...
 
-Entities is a collection of 234 special characters encoded in 6 different languages (plain symbol, html, css, numeric, hex and octal).
+Cloud Entities is a collection of 234 special characters encoded in 6 different languages (plain symbol, html, css, numeric, hex and octal).
 
 Easy to use, you can copy what you need just one click.
 You can also find in the code source a javascript list of literal object of all these characters.
 
-*Check my [entities app](https://istuffs.github.io/entities/)*
+*Check my [cloud entities app](https://istuffs.github.io/cloud-entities/)*
 
 
 ## 🤔 Why !?
@@ -20,7 +20,7 @@ Do you know the HTML entitie for a pilcrow *(¶)*? `&para;`
 > If you do, watch out! You may be a cyborg and you don't know yet. *Checkout for serial number tattoo*.
 
 Personally, I don't. I can't remember them all. So I've create an handy way to retrieve them quickly.<br>
-**Here they are, all stored in my [entities app](https://istuffs.github.io/entities/) ready too be copy pasted in a blaze** :fire:.
+**Here they are, all stored in my [cloud entities app](https://istuffs.github.io/cloud-entities/) ready too be copy pasted in a blaze** :fire:.
 
 ## Features 🤘
 
@@ -33,8 +33,8 @@ Personally, I don't. I can't remember them all. So I've create an handy way to r
 -   **Filters**, keep only the informations you need.
 ![keem only what you need](docs/filters.gif)
 
--   **188 Entities** listed an **encoded in 6 different context**.
+-   **234 Entities** listed an **encoded in 6 different context**.
 
 --- -----
 
-<p style="text-align:center">Coded with :heart: by [iStuffs](https://github.com/iStuffs)</p>
+Coded with :heart: by [iStuffs](https://github.com/iStuffs)
