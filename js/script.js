@@ -2,52 +2,63 @@ let app = new Vue({
   el: '#entities',
   data: {
     entities: entities,
-    countLikes: 0,
-    columns: {
-      'html': true,
-      'symbol': true,
-      'numeric': true,
-      'description': true,
-      'hex': true,
-      'css': true,
-      'js': true
-    },
-    countColumns: 7
+    columns: [
+      { title: 'html',        active: true },
+      { title: 'symbol',      active: true },
+      { title: 'numeric',     active: true },
+      { title: 'description', active: true },
+      { title: 'hex',         active: true },
+      { title: 'css',         active: true },
+      { title: 'js',          active: true },
+    ],
   },
   computed: {
     count() {
       return this.entities.length;
     },
+    columnHtml() {
+        return this.columns.find(item => item.title === 'html').active;
+    },
+    countLikes() {
+        return this.likedEntities.length;
+    },
     hasLikes() {
       return (this.countLikes > 0);
+    },
+    activeColumns() {
+        const cols = Array.from(this.columns);
+        return cols.filter(column => column.active);
+    },
+    countColumns() {
+        return this.activeColumns.length + 1;
+    },
+    likedEntities() {
+        const list = Array.from(this.entities);
+        return list.filter(entity => entity.like);
     }
   },
   methods: {
     toggleCol(column){
-      if (this.columns[column]) {
-        this.countColumns--;
-      } else {
-        this.countColumns++;
-      }
-      this.columns[column] = !this.columns[column]
+        column.active = !column.active;
+    },
+    activeColumn(name) {
+        let active = false;
+        if (this.columns.find(item => item.title === name) !== undefined) {
+            active = this.columns.find(item => item.title === name).active;
+        }
+        return active;
     },
     like(entitie) {
       if ( entitie.like === false ) {
         entitie.like = true;
-        this.countLikes++;
       } else {
         entitie.like = false;
-        this.countLikes--;
       }
       // entitie.like = !entitie.like;
-      // entitie.like ? (entities.countLikes++) : (entities.countLikes--);
     },
     likeCaption(entitie) {
-      let caption = 'Like';
-      if(entitie.like) {
-        caption = 'unLike';
-      }
-      return caption;
+        const caption = entitie.like ? 'unlike' : 'like';
+        return caption;
     },
     copy(e) {
       let text = e.target;
@@ -70,32 +81,21 @@ let app = new Vue({
   mounted() {
     console.log('App mounted!');
 
+    // get liked entities from local storage
     if (localStorage.getItem('entities')) {
-      load = JSON.parse(localStorage.getItem('entities'));
+      const load = JSON.parse(localStorage.getItem('entities'));
       let newEntities = this.entities;
-      newEntities.forEach( (entitie,i) => {
+
+      newEntities.forEach( (entitie, i) => {
         newEntities[i].like = load[i].like;
       });
     }
+
+    // get active columns from local storage
     if (localStorage.getItem('columns')) this.columns = JSON.parse(localStorage.getItem('columns'));
-
-    let count = 0;
-    for (let key in this.columns) {
-      if (this.columns[key]) {
-        count++;
-      }
-    }
-    this.countColumns = count;
-
-    count = 0;
-    this.entities.forEach( (entitie) => {
-      if (entitie.like) { count ++; }
-    });
-    this.countLikes = count;
-
   },
   watch: {
-    entities: {
+    likedEntities: {
       handler() {
         console.log('entities changed!');
         let save = this.entities.map( (entitie) => {return {like: entitie.like}} );

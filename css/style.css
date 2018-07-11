@@ -48,6 +48,7 @@ table {
   margin-bottom: 2rem; }
 
 thead th {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   background: rgba(255, 255, 255, 0.9); }
@@ -56,6 +57,8 @@ thead tr:last-of-type th, thead tr:last-of-type td {
   border-bottom: 2px solid #263238; }
 
 tbody tr {
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
   transition: all .2s linear; }
 
 tbody tr:nth-of-type(even) {
@@ -82,29 +85,43 @@ td {
 
 .overlay-notification {
   display: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   opacity: 0;
   position: fixed;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 250px;
   height: 250px;
   background: rgba(255, 255, 255, 0.9);
   border-radius: 20px;
   font-size: 3rem;
+  -webkit-transition: .3s ease-in-out all;
+  -o-transition: .3s ease-in-out all;
   transition: .3s ease-in-out all; }
 
 .overlay-notification.visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   opacity: 1; }
 
 .columns {
   max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
   padding-bottom: 25px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center; }
   .columns button {
     border: 1px solid #263238;
@@ -112,8 +129,15 @@ td {
     border-radius: 10px;
     margin: 0 5px;
     font-weight: bold;
+    -webkit-transition: .3s all ease-in-out;
+    -o-transition: .3s all ease-in-out;
     transition: .3s all ease-in-out;
     background: rgba(38, 50, 56, 0); }
     .columns button.active {
       background: #263238;
       color: #fff; }
+
+button {
+  white-space: nowrap; }
+
+/*# sourceMappingURL=style.css.map */
