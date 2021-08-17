@@ -3,7 +3,8 @@
   font-family: 'entities';
   src: url("../fonts/entities.ttf?szl2oe") format("truetype"), url("../fonts/entities.woff?szl2oe") format("woff"), url("../fonts/entities.svg?szl2oe#entities") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -16,27 +17,34 @@
   line-height: 1;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+}
 
 .icon-command:before {
-  content: "\e900"; }
+  content: "\e900";
+}
 
 .icon-cmd:before {
-  content: "\e900"; }
+  content: "\e900";
+}
 
 .icon-heart-o:before {
-  content: "\e901"; }
+  content: "\e901";
+}
 
 .icon-heart:before {
-  content: "\e902"; }
+  content: "\e902";
+}
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: #263238; }
+  color: #263238;
+}
 
 h1 {
   text-align: center;
-  padding: 50px 0; }
+  padding: 50px 0;
+}
 
 table {
   max-width: 1200px;
@@ -45,75 +53,86 @@ table {
   border: 1px solid #263238;
   border-radius: 0 0 5px 5px;
   border-collapse: collapse;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+}
 
 thead th {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background: rgba(255, 255, 255, 0.9); }
+  background: rgba(255, 255, 255, 0.9);
+}
 
 thead tr:last-of-type th, thead tr:last-of-type td {
-  border-bottom: 2px solid #263238; }
+  border-bottom: 2px solid #263238;
+}
 
 tbody tr {
   -webkit-transition: all .2s linear;
-  -o-transition: all .2s linear;
-  transition: all .2s linear; }
+  transition: all .2s linear;
+}
 
 tbody tr:nth-of-type(even) {
-  background: rgba(0, 188, 212, 0.1); }
+  background: rgba(0, 188, 212, 0.1);
+}
 
 tbody tr:hover {
   background: rgba(0, 188, 212, 0.5);
-  color: #00343b; }
+  color: #00343b;
+}
 
 tbody tr.like {
-  background: rgba(236, 64, 122, 0.3); }
+  background: rgba(236, 64, 122, 0.3);
+}
 
 tfoot {
   background: #f1f1f1;
-  text-align: right; }
-  tfoot td {
-    padding-right: 30px; }
+  text-align: right;
+}
+
+tfoot td {
+  padding-right: 30px;
+}
 
 th {
-  padding: 15px; }
+  padding: 15px;
+}
 
 td {
-  padding: 12px; }
+  padding: 12px;
+}
 
 .overlay-notification {
   display: none;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   opacity: 0;
   position: fixed;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 250px;
   height: 250px;
   background: rgba(255, 255, 255, 0.9);
   border-radius: 20px;
   font-size: 3rem;
   -webkit-transition: .3s ease-in-out all;
-  -o-transition: .3s ease-in-out all;
-  transition: .3s ease-in-out all; }
+  transition: .3s ease-in-out all;
+}
 
 .overlay-notification.visible {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  opacity: 1; }
+  opacity: 1;
+}
 
-.columns {
+.filters {
   max-width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -121,23 +140,35 @@ td {
   margin: 0 auto;
   padding-bottom: 25px;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-  .columns button {
-    border: 1px solid #263238;
-    padding: 4px 10px;
-    border-radius: 10px;
-    margin: 0 5px;
-    font-weight: bold;
-    -webkit-transition: .3s all ease-in-out;
-    -o-transition: .3s all ease-in-out;
-    transition: .3s all ease-in-out;
-    background: rgba(38, 50, 56, 0); }
-    .columns button.active {
-      background: #263238;
-      color: #fff; }
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filters button {
+  cursor: pointer;
+  border: 1px solid #263238;
+  padding: 4px 10px;
+  border-radius: 5px;
+  margin: 0 5px;
+  font-weight: bold;
+  -webkit-transition: .3s all ease-in-out;
+  transition: .3s all ease-in-out;
+  background: rgba(38, 50, 56, 0);
+}
+
+.filters button.active {
+  background: #263238;
+  color: #fff;
+}
 
 button {
-  white-space: nowrap; }
+  white-space: nowrap;
+}
 
+footer {
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */

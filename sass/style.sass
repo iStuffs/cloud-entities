@@ -8,6 +8,7 @@ $color-text: #263238
 body
   font-family: 'Roboto', sans-serif
   color: $color-text
+
 h1
   text-align: center
   padding: 50px 0
@@ -20,10 +21,10 @@ table
   border-radius: 0 0 5px 5px
   border-collapse: collapse
   margin-bottom: 2rem
-
   // position: relative
   // max-height: 70vh
   // overflow-y: auto
+
 thead
   th
     position: sticky
@@ -32,6 +33,7 @@ thead
   tr:last-of-type
     th, td
       border-bottom: 2px solid $color-text
+
 tbody
   tr
     transition: all .2s linear
@@ -44,13 +46,16 @@ tbody
 
 tbody tr.like
   background: rgba($color-liked, .3)
+
 tfoot
   background: #f1f1f1
   text-align: right
   td
     padding-right: 30px
+
 th
   padding: 15px
+
 td
   padding: 12px
 
@@ -74,23 +79,30 @@ td
   display: flex
   opacity: 1
 
-.columns
+.filters
   max-width: 1200px
   display: flex
   margin: 0 auto
   padding-bottom: 25px
   justify-content: center
+  align-items: center
+
   button
+    cursor: pointer
     border: 1px solid $color-text
     padding: 4px 10px
-    border-radius: 10px
+    border-radius: 5px
     margin: 0 5px
     font-weight: bold
     transition: .3s all ease-in-out
     background: rgba($color-text,0)
+
     &.active
       background: $color-text
       color: #fff
 
 button
-    white-space: nowrap
+  white-space: nowrap
+
+footer
+  text-align: center
